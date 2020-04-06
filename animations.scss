@@ -1,0 +1,26 @@
+@keyframes flip {
+  from {
+    transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+
+  25% {
+    transform: rotate3d(1, 0, 0, -180deg);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: rotate3d(1, 0, 0, -360deg);
+    opacity: 1;
+  }
+
+  75% {
+    transform: rotate3d(1, 0, 0, 180deg);
+    opacity: 0.2;
+  }
+
+  to {
+    transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+}

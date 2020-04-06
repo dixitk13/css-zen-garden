@@ -1,15 +1,190 @@
-/* css Zen Garden default style v1.02
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
+@charset "UTF-8";
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate3d(1, 0, 0, -180deg);
+            transform: rotate3d(1, 0, 0, -180deg);
+    opacity: 0.2;
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 0, -360deg);
+            transform: rotate3d(1, 0, 0, -360deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+            transform: rotate3d(1, 0, 0, 180deg);
+    opacity: 0.2;
+  }
+  to {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
 }
+@keyframes flip {
+  from {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate3d(1, 0, 0, -180deg);
+            transform: rotate3d(1, 0, 0, -180deg);
+    opacity: 0.2;
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 0, -360deg);
+            transform: rotate3d(1, 0, 0, -360deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+            transform: rotate3d(1, 0, 0, 180deg);
+    opacity: 0.2;
+  }
+  to {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+}
+
+html {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "SF Pro Text", "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+li {
+  margin-bottom: 6px;
+  list-style-type: none;
+}
+
+li:before {
+  content: "›";
+  color: #aaaaaa;
+  font-style: italic;
+  margin-right: 3px;
+}
+
+a {
+  color: #595959;
+  text-decoration: none;
+}
+
+.page-wrapper section header,
+.page-wrapper section .preamble,
+.page-wrapper section .summary {
+  padding: 20px;
+  outline: 1px solid #ccc;
+  margin: 20px;
+}
+
+.page-wrapper section header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0074d9;
+  color: #ffffff;
+}
+
+.page-wrapper section header h1 {
+  color: #dddddd;
+  font-size: 2rem;
+  -webkit-animation: flip 10s infinite;
+          animation: flip 10s infinite;
+}
+
+.page-wrapper section header h2 {
+  font-weight: 400;
+}
+
+.page-wrapper section header h2 abbr {
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.page-wrapper section .summary {
+  background: #7fdbff;
+}
+
+.page-wrapper section .summary p {
+  margin: 0;
+}
+
+.page-wrapper section .preamble {
+  background: #2ecc40;
+}
+
+.page-wrapper section .preamble h3 {
+  margin: 0;
+}
+
+.page-wrapper .main footer,
+.page-wrapper .main .explanation,
+.page-wrapper .main .participation,
+.page-wrapper .main .benefits,
+.page-wrapper .main .requirements {
+  outline: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+
+.page-wrapper .main .explanation {
+  background: #ffdc00;
+}
+
+.page-wrapper .main .participation {
+  background: #ff851b;
+}
+
+.page-wrapper .main .benefits {
+  background: #b10dc9;
+}
+
+.page-wrapper .main .requirements {
+  background: #001f3f;
+  color: #ffffff;
+}
+
+.page-wrapper .main footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.page-wrapper .main footer a {
+  display: block;
+}
+
+.page-wrapper .sidebar .wrapper .design-selection,
+.page-wrapper .sidebar .wrapper .zen-resources,
+.page-wrapper .sidebar .wrapper .design-archives {
+  outline: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+/*# sourceMappingURL=style.css.map */

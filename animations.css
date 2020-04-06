@@ -1,0 +1,55 @@
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate3d(1, 0, 0, -180deg);
+            transform: rotate3d(1, 0, 0, -180deg);
+    opacity: 0.2;
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 0, -360deg);
+            transform: rotate3d(1, 0, 0, -360deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+            transform: rotate3d(1, 0, 0, 180deg);
+    opacity: 0.2;
+  }
+  to {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes flip {
+  from {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate3d(1, 0, 0, -180deg);
+            transform: rotate3d(1, 0, 0, -180deg);
+    opacity: 0.2;
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 0, -360deg);
+            transform: rotate3d(1, 0, 0, -360deg);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: rotate3d(1, 0, 0, 180deg);
+            transform: rotate3d(1, 0, 0, 180deg);
+    opacity: 0.2;
+  }
+  to {
+    -webkit-transform: rotate3d(1, 0, 0, 0deg);
+            transform: rotate3d(1, 0, 0, 0deg);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=animations.css.map */
